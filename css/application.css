@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open-sans', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+header {
+   width:100%;
+}
+
+header #video-container {
+	width: 70%;
+    margin:0 15%;
+	position: relative;
+}
+
+header #video-container video {
+    width:100%;
+}
+
+header #video-container #video-controls {
+    position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+}
+
+.progressBar {
+    position: relative;
+    width: 100%;
+    height:5px;
+    padding:0;
+    margin:0;
+    background-color: #000;
+    opacity:0.5;
+}
+.bufferBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ccc;
+}
+
+
+
+main .text-wrapper {
+    width: 70%;
+    margin:0 15%;
+}
+
+main .text-wrapper p {
+    line-height:1.4em;
+    color: #555;
+}

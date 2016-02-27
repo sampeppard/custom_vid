@@ -1,0 +1,87 @@
+/* Header Styles */
+
+header {
+
+	width:100%;
+
+
+	#video-container {
+		width: 70%;
+	    margin:0 15%;
+		position: relative;
+
+		video {
+			width:100%;	
+		}
+
+		#video-controls {
+		    position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 5px;
+			z-index: 1;
+		}
+
+		#video-controls .progressBar {
+			position: relative;
+		    width: 100%;
+		    height:5px;
+		    padding:0;
+		    margin:1em 0;
+		    background-color: $progress-bar;
+		    opacity:0.5;
+		    cursor: pointer;
+		}
+
+		#video-controls .progressBar .timeBar {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 0;
+		    height: 100%;
+		    background-color: $progress;
+		    cursor: pointer;
+		}
+
+		.controls {
+			display: none;
+		} 
+
+		#video-controls .controls-left {
+			float: left;
+			color:$main-background;
+			margin:0 1em 0.5em 1em;
+			height:20px;
+		}
+
+		#video-controls .controls-right {
+			float: right;
+			margin:0 1em 0.5em 1em;
+			height:20px;
+		}
+
+		#play-pause, .progressTime, #mute, #volume-bar, #full-screen {
+			display: inline-block;
+			padding:0;
+			margin:-4px 5px;
+			font-size: 0.7em;
+		}
+
+		#volume-bar {
+			width:4em;
+		}
+
+	}
+
+	@include breakpoint(medium) {
+		#video-container {
+			width:100%;
+			margin:0;
+		}
+	}	
+}
+
+
+
+

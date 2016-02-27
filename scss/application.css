@@ -1,0 +1,86 @@
+/* Variables */
+/* Mixins */
+/* Base Styles */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "open-sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; }
+
+p {
+  font-size: 0.9em; }
+
+/* Link Styles */
+a {
+  text-decoration: none; }
+
+/* Header Styles */
+header {
+  width: 100%; }
+  header #video-container {
+    width: 70%;
+    margin: 0 15%;
+    position: relative; }
+    header #video-container video {
+      width: 100%; }
+    header #video-container #video-controls {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 5px;
+      z-index: 1; }
+    header #video-container #video-controls .progressBar {
+      position: relative;
+      width: 100%;
+      height: 5px;
+      padding: 0;
+      margin: 1em 0;
+      background-color: #000;
+      opacity: 0.5;
+      cursor: pointer; }
+    header #video-container #video-controls .progressBar .timeBar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #FA0A0A;
+      cursor: pointer; }
+    header #video-container .controls {
+      display: none; }
+    header #video-container #video-controls .controls-left {
+      float: left;
+      color: #fff;
+      margin: 0 1em 0.5em 1em;
+      height: 20px; }
+    header #video-container #video-controls .controls-right {
+      float: right;
+      margin: 0 1em 0.5em 1em;
+      height: 20px; }
+    header #video-container #play-pause, header #video-container .progressTime, header #video-container #mute, header #video-container #volume-bar, header #video-container #full-screen {
+      display: inline-block;
+      padding: 0;
+      margin: -4px 5px;
+      font-size: 0.7em; }
+    header #video-container #volume-bar {
+      width: 4em; }
+  @media (max-width: 900px) {
+    header #video-container {
+      width: 100%;
+      margin: 0; } }
+
+/* Main Container Styles */
+main {
+  width: 100%; }
+  main .text-wrapper {
+    width: 70%;
+    margin: 0 15%; }
+    main .text-wrapper p {
+      line-height: 1.4em;
+      color: #555; }
+
+/*# sourceMappingURL=application.css.map */

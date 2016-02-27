@@ -1,0 +1,20 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $open-sans;
+    margin:0;
+    padding:0;
+    background-color: $main-background;
+}
+
+p { font-size: $p;}
+
+
+/* Link Styles */
+
+a {
+    text-decoration: none;
+}

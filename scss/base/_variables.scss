@@ -1,0 +1,31 @@
+/* Variables */
+
+// Descriptive color names
+
+$white		: #fff;
+$black		: #000;
+$red		: #FA0A0A;
+$tomato		: #TOMATO;
+$emperor	: #555;
+
+// Functional color names
+
+$progress			: $red;
+$main-background	: $white;
+$progress-bar		: $black;
+$text-highlight		: $tomato;
+$body-text			: $emperor;
+
+
+// Font stacks
+
+$open-sans : 'open-sans', sans-serif;
+
+// Font sizes
+
+$h1 : 1.5em;
+$h2 : 1.4em;
+$h3 : 1.3em;
+$h4 : 1.2em;
+$h5 : 1.1em;
+$p 	: 0.9em;
