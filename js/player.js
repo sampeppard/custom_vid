@@ -14,21 +14,15 @@ $(".grabber").hover(function() {
     return false;
 });
 
-
-
 // Event listener for the play/pause button
 playButton.click(function() {
   if (video.paused === true) {
     // Play the video
     video.play();
-
-    // Update the button text to 'Pause'
     playButton.attr("src", "icons/pause-icon.png");
   } else {
     // Pause the video
     video.pause();
-
-    // Update the button text to 'Play'
     playButton.attr("src", "icons/play-icon.png");
   }
 });
@@ -75,8 +69,8 @@ $(document).mousemove(function(e) {
 //update Progress Bar control
 var updatebar = function(x) {
     var progress = $('.progressBar');
-    var maxduration = video.duration; //Video duraiton
-    var position = x - progress.offset().left; //Click pos
+    var maxduration = video.duration; 
+    var position = x - progress.offset().left; 
     var percentage = 100 * position / progress.width();
  
     //Check within range
@@ -87,7 +81,7 @@ var updatebar = function(x) {
         percentage = 0;
     }
  
-    //Update progress bar and video currenttime
+    //Update progress bar 
     $('.timeBar').css('width', percentage+'%');
     video.currentTime = maxduration * percentage / 100;
 };
