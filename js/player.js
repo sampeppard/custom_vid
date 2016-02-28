@@ -31,7 +31,7 @@ playButton.click(function() {
 var timeFormat = function(seconds){
   var m = Math.floor(seconds/60)<10 ? "0" + Math.floor(seconds/60) : Math.floor(seconds/60);
   var s = Math.floor(seconds-(m*60))<10 ? "0" + Math.floor(seconds-(m*60)) : Math.floor(seconds-(m*60));
-  return m+":"+s;
+  return m + ":" + s;
 };
 
 //get HTML5 video time duration
@@ -45,8 +45,7 @@ video.addEventListener('timeupdate', function() {
     var currentPos = video.currentTime;
     var maxDuration = video.duration;
     var percentage = 100 * currentPos / maxDuration;
-    $('.timeBar').css('width', percentage+'%');
-    
+    $('.timeBar').css('width', percentage+'%'); 
 });
 
 var timeDrag = false;   /* Drag status */
